@@ -1,0 +1,104 @@
+/* Estilos generales de la página */
+body {
+    background-image: url("fondo_valle.jpg"); /* Cambia por tu imagen de fondo del Alto Valle */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: rgba(40, 40, 40, 0.9);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #4CAF50; /* Verde sustentable al pasar el cursor */
+}
+
+/* Contenedor principal con efecto de fondo difuminado (Glassmorphism) */
+.content-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.85); /* Fondo blanco semitransparente */
+    backdrop-filter: blur(10px); /* Aplica el desenfoque al fondo */
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos y Párrafos */
+h1 {
+    color: #1a2a52;
+    font-size: 42px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h2 {
+    color: #2e7d32;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Galería de Ítems (Grid responsivo) */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Tarjeta individual por ítem */
+.item-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 260px;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen de cada ítem */
+.item-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Mini título del ítem */
+.item-card h3 {
+    margin: 15px 0 5px 0;
+    font-size: 18px;
+    color: #222;
+}
